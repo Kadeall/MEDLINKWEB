@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="x.css">
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div class="overlay">
+        <div class="header-content">
+            <div class="logo">
+                <img src="x-removebg-preview.png" alt="Logo">
+            </div>
+            <nav id="navbar">
+                <ul class="nav-links">
+                    <li><a href="x.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn" id="yearsDropdown">Years</a>
+                        <ul class="dropdown-content" id="yearOptions">
+                            <li><a href="Year1.html">Year 1</a></li>
+                            <li><a href="Year2.html">Year 2</a></li>
+                            <li><a href="Year3.html">Year 3</a></li>
+                            <li><a href="Year4.html">Year 4</a></li>
+                            <li><a href="Year5.html">Year 5</a></li>
+                            <li><a href="Year5.html">Year 6</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#about-section">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            </div>
+        </div>
+    </div>
+    <p>welcome to year 6</p>
+     <!-- Navigation Section -->
+<section>
+     <div id="navpages">
+        <ul class="nav-pages">
+            <li><a href="#" onclick="loadContent('MKU.html')">MKU</a></li>
+            <li><a href="#" onclick="loadContent('UON.html')">UON</a></li>
+            <li><a href="#" onclick="loadContent('JKUAT.html')">JKUAT</a></li>
+            <li><a href="#" onclick="loadContent('KU.html')">KU</a></li>
+        </ul>
+     </div>
+
+    <!-- Main Content Section -->
+    <main id="content">
+        <!-- Content from each page will load here dynamically -->
+    </main>
+</section>
+
+
+
+    <script src="x.js"></script>
+</body>
+</html>

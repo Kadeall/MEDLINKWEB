@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Navigation</title>
+    <style>
+        /* Basic styling */
+        body {
+            font-family: Arial, sans-serif;
+        }
+        nav {
+            background-color: #f4f4f4;
+            padding: 10px;
+        }
+        nav a {
+            margin: 10px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        .content {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <a href="#" id="home-btn">Home</a>
+        <a href="#" id="product-btn">Products</a>
+        <a href="#" id="about-btn">About</a>
+        <a href="x.html" >content</a>
+    </nav>
+
+    <!-- Main Content Section -->
+    <div class="content" id="content">
+        <h1>Welcome to our website!</h1>
+        <p>This is the home page. Click the links above to see more.</p>
+    </div>
+
+    <script>
+        // JavaScript to handle the page switching
+        const homeBtn = document.getElementById('home-btn');
+        const productBtn = document.getElementById('product-btn');
+        const aboutBtn = document.getElementById('about-btn');
+        const content = document.getElementById('content');
+
+        // Function to load the home page content
+        homeBtn.addEventListener('click', function() {
+            content.innerHTML = `
+                <h1>Welcome to our website!</h1>
+                <p>This is the home page. Click the links above to see more.</p>
+            `;
+        });
+
+        // Function to load the products page content
+        productBtn.addEventListener('click', function() {
+            content.innerHTML = `
+                <h1>Our Products</h1>
+                <ul>
+                    <li>Product 1</li>
+                    <li>Product 2</li>
+                    <li>Product 3</li>
+                </ul>
+            `;
+        });
+
+        // Function to load the about page content
+        aboutBtn.addEventListener('click', function() {
+            content.innerHTML = `
+                <h1>About Us</h1>
+                <p>We are a company that sells amazing products.</p>
+            `;
+        });
+    </script>
+</body>
+</html>

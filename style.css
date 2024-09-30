@@ -1,0 +1,19 @@
+/* Basic styling */
+nav {
+    background-color: #f4f4f4;
+    padding: 10px;
+}
+nav a {
+    margin: 10px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Highlight the active link */
+nav a.active {
+    color: #fff;
+    background-color: #007bff;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
